@@ -1,0 +1,411 @@
+
+/* ------------------PC First------------------------- */
+     
+*{ box-sizing: border-box;  }
+a,img{display: block;text-decoration: none;color: #3b3b3b} 
+  
+/* ------------------header-------------------------- */   
+   *,*:before,*:after{
+    box-sizing:border-box
+  body {
+    padding-top: 60px;
+  }
+  
+  .header {
+    background: #fff;
+    border-bottom: 1px solid #F1F1F1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .header-inner{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+ 
+ 
+  .menu {
+    display: flex;
+    gap: 40px
+  }
+  
+  .menu .menu-list a{
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 4px 8px;
+    position: relative;
+  }
+  
+  .menu .menu-list a::before,
+  .menu .menu-list a::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #919191;
+    opacity: 0;
+    -webkit-box-reflect: below 16px;
+  }
+  
+  .menu .menu-list a::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .menu .menu-list a::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  .menu .menu-list a:hover::before,
+  .menu .menu-list a:hover::after {
+    opacity: 1;
+  }
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+  }
+  .menu-btn .menu-icon {
+    display: none;
+  }
+  .menu-control:checked + .menu-btn .open {
+    display: none;
+  }
+  .menu-control:checked + .menu-btn .close {
+    display: inline;
+  }
+  .menu-control:not(:checked) + .menu-btn .open {
+    display: inline;
+  }
+  .menu-control:not(:checked) + .menu-btn .close {
+    display: none;
+  }
+  .menu-control {
+    display: none;
+  }
+  .logo {
+    margin-right: 318px;
+  }
+  .menu {
+    display: flex;
+    gap: 40px
+  }
+  
+  .menu .menu-list a{
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 4px 8px;
+    position: relative;
+  }
+  
+  .menu .menu-list a::before,
+  .menu .menu-list a::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #919191;
+    opacity: 0;
+    -webkit-box-reflect: below 16px;
+  }
+  
+  .menu .menu-list a::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .menu .menu-list a::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+  }
+  .menu .menu-list a:hover::before,
+  .menu .menu-list a:hover::after {
+    opacity: 1;
+  }
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+  }
+  .menu-btn .menu-icon {
+    display: none;
+  }
+  .menu-control:checked + .menu-btn .open {
+    display: none;
+  }
+  .menu-control:checked + .menu-btn .close {
+    display: inline;
+  }
+  .menu-control:not(:checked) + .menu-btn .open {
+    display: inline;
+  }
+  .menu-control:not(:checked) + .menu-btn .close {
+    display: none;
+  }
+  .menu-control {
+    display: none;
+  }  
+
+
+  .banner{
+        width: 100%;
+        height: auto;
+        background-color: #fafafa;
+        text-align: center;
+        padding: 6em 0;
+        position: relative;
+   } 
+   .banner .caption{
+       width: 680px;
+       position: relative;
+       margin: 0 auto;
+   }
+   .banner .caption h3 {
+        font-size: 1.6em;
+        padding: 10px 0;
+     }
+    .banner .caption img {
+        display: block;
+        width:70px;
+} 
+    .kword{
+        background-image: url('	https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .banner .dotL{
+        position: absolute;
+        top: -50px;
+        left:-10px;
+        z-index: 10;
+    }
+    .banner .dotR{
+        position: absolute;
+        bottom: -50px;
+        right:15px;
+        z-index: 10;
+    }
+   .experi{
+        width: 640px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto ;
+        font-size: 1em;
+        line-height: 1.8;
+        margin-top: 5em;
+}
+.experi .ex{
+    padding: 0 25px;
+}
+
+.dwnline::after{
+    content:"";
+    display: block;
+    width: 24px;
+    border-bottom: 2px solid #c1c1c1;
+    margin: 0 auto;
+}
+
+
+main{width: 100%;padding: 100px 0;}
+main .flexContainer{
+    display: block;
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:80px 24px;
+}
+main ul li{margin: 0 auto; }
+main ul li a img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+main .flexContainer h3{
+    color: #3b3b3b;
+    font-size: 1.8em;
+    font-weight: 800;
+    padding-top: 1em;
+    padding-left: 24px;
+}
+main .flexContainer p{
+     padding-top: 1em;
+     color: #919191;
+     padding-left: 24px;
+}
+.w_tag{  
+    margin-top: 2em;
+    padding-left: 24px;
+
+}
+.w_tag li {
+    display: inline-block;
+    background: #e9e9e9;
+    padding: 5px 10px;
+    border-radius:50px;
+    margin-right: 15px; 
+}
+.w_tag li a{
+     color: #3b3b3b;
+     text-align: center;
+} 
+
+ol.workMenu{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+ ol.workMenu li a{
+        display:block;
+        width:1.6em;height:1.6em;
+        text-align: center;
+        line-height: 1.6em;
+        border-radius: 4px;
+        font-size: bold;
+ }
+.olActive{background-color: #000;color: #fff;}
+
+footer{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactMe img{
+    width: 120px;   
+    height: auto;
+    display: block;
+    margin-bottom: 2em;
+}
+.contactMe h6{
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+address{color:#919191;font-weight: normal;font-size:1.2em;}
+
+
+.contactWay ul li {
+    clear: both;
+}
+.infloat{
+    overflow: hidden;
+}
+.infloat img,.infloat span{
+    float: left;
+    /* background: pink; */
+}
+
+.infloat span{
+    display: block;
+    margin-top: 0.5em;
+}
+
+.contactWay  a{
+    width: 300px;
+	background: #ffffff;
+	padding: 8px 24px;
+	border-radius: 8px;
+	border: 1px solid #c1c1c1;
+	margin-bottom: 24px;
+    display:block;
+    line-height: 30px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #3b3b3b; 
+    text-indent:0.5em;
+}
+
+a.btnActive{
+    background: #000;
+    font-weight: 800;
+	color: #ffffff;
+}
+   
+
+/* ----------平板------------- */
+@media (max-width: 992px) {
+    .logo {
+        margin-right: 0px;
+      }
+    .menu-btn{
+      display: block;
+    }
+    .menu {
+      display: none;
+    }
+    .menu-control:checked ~ .menu {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu .menu-list a{
+        display: block;
+        height: 2em;
+    }
+    .header-inner{
+        justify-content: space-between;
+        /* background: pink; */
+    }
+
+    .banner,main{
+        width: 100%;
+        margin: 0 auto;
+    }    
+
+    main .flexContainer{
+        display: block;
+        width: 100%;
+        padding: 1em;
+    }
+    .flexContainer li{
+        margin-bottom: 3em;
+    }
+  }    
+ /* ----------手機------------- */
+ @media(max-width: 767px){
+ 
+    
+
+ }
+  
+ /* ----------不知為何------------- */
+  @media(max-width: 1295px){
+    .container{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+    
+
