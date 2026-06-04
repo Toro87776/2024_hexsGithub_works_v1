@@ -7,6 +7,7 @@ a,img{display: block;text-decoration: none;color: #3b3b3b}
 /* ------------------header-------------------------- */   
    *,*:before,*:after{
     box-sizing:border-box
+  }
   body {
     padding-top: 60px;
   }
